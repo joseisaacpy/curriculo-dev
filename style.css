@@ -84,8 +84,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding: 10px;
+  gap: 5px;
   width: 100%;
+}
+footer p {
+  font-weight: bold;
 }
 footer .redes {
   display: flex;
