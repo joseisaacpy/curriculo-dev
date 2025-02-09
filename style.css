@@ -1,13 +1,4 @@
-/* font google - poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-/* variáveis */
-:root {
-  --azulPadrao: #00a2ff;
-  --azulEscuro: #064d76;
-  --azulClaro: #2badf8;
-  --arrendado: 10px;
-}
-/* futura animacao */
+/* animacao */
 @keyframes aparicaoSuave {
   from {
     opacity: 0; /* Começa invisível */
@@ -18,6 +9,17 @@
     transform: translateY(0); /* Volta à posição original */
   }
 }
+
+/* font google - poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* variáveis */
+:root {
+  --azulPadrao: #00a2ff;
+  --azulEscuro: #064d76;
+  --azulClaro: #2badf8;
+  --arrendado: 10px;
+}
+
 /* reset */
 * {
   padding: 0;
@@ -25,15 +27,16 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 /* html */
 html {
   font-size: 16px;
 }
+
 /* body */
 body {
   animation: aparicaoSuave 1s ease-in-out; /* Duração de 1 segundo */
   font-size: 1rem;
-  /* background-color: var(--azulAle); */
   background: linear-gradient(to right, var(--azulEscuro), #000);
   width: 100dvw;
   height: 100dvh;
@@ -41,31 +44,42 @@ body {
   overflow-x: hidden;
   color: #fff;
 }
+
 /* header */
 header {
   width: 100%;
   padding: 20px;
   text-align: center;
 }
+
 /* main */
 main {
   max-width: 70%;
   margin: 0 auto;
 }
-/* linha h */
+
+/* linhas horizontais */
 hr {
   border: 1.4px solid;
   margin: 6px 0;
 }
+
 /* titulos h2 */
 h2 {
   margin: 8px 0;
   color: var(--azulPadrao);
 }
+
 /* titulos h3 */
 h3 {
   margin-top: 8px;
 }
+
+/* uls */
+ul {
+  margin-left: 2rem;
+}
+
 /* resumo */
 main .resumo {
   display: flex;
@@ -75,6 +89,7 @@ main .resumo {
 main .resumo strong {
   color: var(--azulClaro);
 }
+
 /*div de experiencia  */
 .experiencia {
   margin-left: 10px;
@@ -82,27 +97,12 @@ main .resumo strong {
   flex-direction: column;
   gap: 4px;
 }
-.experiencia ul {
-  margin-left: 2rem;
-}
-/* div de formacoes */
-.formacoes {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-/* formacao */
-.formacao {
-  margin-left: 10px;
-}
-/* div de habilidades */
-.habilidades ul {
-  margin-left: 30px;
-}
+
 /* strongs */
 strong {
   font-size: 0.9rem;
 }
+
 /* footer */
 footer {
   display: flex;
@@ -127,6 +127,7 @@ footer .redes a img {
   height: 30px;
 }
 
+/* responsivo */
 @media (max-width: 700px) {
   html {
     font-size: 13px;
