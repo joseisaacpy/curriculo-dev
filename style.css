@@ -23,7 +23,8 @@ html {
 /* body */
 body {
   font-size: 1rem;
-  background-color: var(--azulAle);
+  /* background-color: var(--azulAle); */
+  background: linear-gradient(to right, var(--azulEscuro), #000);
   width: 100dvw;
   height: 100dvh;
   margin: 0 auto;
@@ -46,11 +47,23 @@ hr {
   border: 1.4px solid;
   margin: 6px 0;
 }
+/* titulos h2 */
+h2 {
+  margin: 8px 0;
+  color: var(--azulPadrao);
+}
+/* titulos h3 */
+h3 {
+  margin-top: 8px;
+}
 /* resumo */
 main .resumo {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+main .resumo strong {
+  color: var(--azulClaro);
 }
 /*div de experiencia  */
 .experiencia {
@@ -58,9 +71,6 @@ main .resumo {
   display: flex;
   flex-direction: column;
   gap: 4px;
-}
-.experiencia h3 {
-  margin: 10px 0 0;
 }
 .experiencia ul {
   margin-left: 2rem;
@@ -74,6 +84,10 @@ main .resumo {
 /* formacao */
 .formacao {
   margin-left: 10px;
+}
+/* div de habilidades */
+.habilidades ul {
+  margin-left: 30px;
 }
 /* strongs */
 strong {
@@ -105,7 +119,7 @@ footer .redes a img {
 
 @media (max-width: 700px) {
   html {
-    font-size: 14px;
+    font-size: 13px;
   }
   main {
     max-width: 90%;
