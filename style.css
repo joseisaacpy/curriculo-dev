@@ -139,3 +139,34 @@ footer .redes a img {
     text-align: center;
   }
 }
+/* pagina de erro */
+#pag-erro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100dvw;
+  height: 100dvh;
+  text-align: center;
+}
+#pag-erro h1 {
+  font-size: 3rem;
+}
+/* botao de voltar */
+#pag-erro #btnVoltar {
+  background-color: var(--azulPadrao);
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  opacity: 0.6;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+#pag-erro #btnVoltar:hover {
+  opacity: 1;
+}
+#pag-erro #btnVoltar:active {
+  transform: scale(1.3);
+}

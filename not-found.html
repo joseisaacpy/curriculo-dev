@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Not Found</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main id="pag-erro">
+      <h1>
+        Ops, página não encontrada. <br />
+        Tente novamente mais tarde!
+      </h1>
+      <div class="btn" id="btnVoltar">⬅</div>
+    </main>
+    <script>
+      // botao de voltar
+      let btnVoltar = document.getElementById("btnVoltar");
+      // adiciona evento de clique para voltar para página do currículo
+      btnVoltar.addEventListener("click", () => {
+        window.history.back();
+      });
+    </script>
+  </body>
+</html>
