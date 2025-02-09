@@ -109,7 +109,7 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 15px;
+  margin: 10px 5px;
   gap: 5px;
   width: 100%;
 }
@@ -121,6 +121,7 @@ footer .redes {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 5px;
 }
 footer .redes a img {
   width: 30px;
@@ -130,7 +131,7 @@ footer .redes a img {
 /* responsivo */
 @media (max-width: 700px) {
   html {
-    font-size: 13px;
+    font-size: 15px;
   }
   main {
     max-width: 90%;
@@ -160,13 +161,9 @@ footer .redes a img {
   padding: 10px;
   border-radius: 50%;
   font-size: 1.5rem;
-  opacity: 0.6;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
 #pag-erro #btnVoltar:hover {
-  opacity: 1;
-}
-#pag-erro #btnVoltar:active {
   transform: scale(1.3);
 }
