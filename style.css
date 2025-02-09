@@ -2,12 +2,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* variáveis */
 :root {
-  --azulAle: rgb(5, 42, 77);
   --azulPadrao: #00a2ff;
   --azulEscuro: #064d76;
   --azulClaro: #2badf8;
-
   --arrendado: 10px;
+}
+/* futura animacao */
+@keyframes aparicaoSuave {
+  from {
+    opacity: 0; /* Começa invisível */
+    transform: translateY(20px); /* Opcional: desliza levemente para cima */
+  }
+  to {
+    opacity: 1; /* Termina totalmente visível */
+    transform: translateY(0); /* Volta à posição original */
+  }
 }
 /* reset */
 * {
@@ -22,6 +31,7 @@ html {
 }
 /* body */
 body {
+  animation: aparicaoSuave 1s ease-in-out; /* Duração de 1 segundo */
   font-size: 1rem;
   /* background-color: var(--azulAle); */
   background: linear-gradient(to right, var(--azulEscuro), #000);
