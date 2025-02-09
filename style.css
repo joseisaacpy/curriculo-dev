@@ -1,12 +1,12 @@
 /* animacao */
 @keyframes aparicaoSuave {
   from {
-    opacity: 0; /* Começa invisível */
-    transform: translateY(20px); /* Opcional: desliza levemente para cima */
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-    opacity: 1; /* Termina totalmente visível */
-    transform: translateY(0); /* Volta à posição original */
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -35,7 +35,7 @@ html {
 
 /* body */
 body {
-  animation: aparicaoSuave 1s ease-in-out; /* Duração de 1 segundo */
+  animation: aparicaoSuave 1.5s ease-in-out;
   font-size: 1rem;
   background: linear-gradient(to right, var(--azulEscuro), #000);
   width: 100dvw;
